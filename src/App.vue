@@ -12,7 +12,7 @@ import HelloWorld from './components/HelloWorld.vue'
     </a> -->
     <h1>This is Backoffice application</h1>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <!-- <HelloWorld msg="Vite + Vue" /> -->
 </template>
 
 <style scoped>

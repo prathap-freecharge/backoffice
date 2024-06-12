@@ -17,6 +17,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:prathap-freecharge.github.io
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:prathap-freecharge/backoffice.git master:gh-pages
+git push -f git@github.com:prathap-freecharge/backoffice.git main:gh-pages
 
 cd -
