@@ -1,18 +1,10 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
+<!-- <script setup>
 </script>
 
 <template>
   <div>
-    <!-- <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a> -->
     <h1>This is Backoffice application</h1>
   </div>
-  <!-- <HelloWorld msg="Vite + Vue" /> -->
 </template>
 
 <style scoped>
@@ -27,5 +19,49 @@ import HelloWorld from './components/HelloWorld.vue'
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+</style>
+
+
+<script setup>
+console.log('Hello from App.vue!');
+</script> -->
+
+<template>
+  <div id="app">
+    <router-view></router-view>
+  </div>
+</template>
+
+<script>
+import { useRouter, useRoute } from 'vue-router';
+import { onMounted, watch } from 'vue';
+import { useApplicationStore } from './stores/index';
+
+export default {
+  name: 'App',
+  setup() {
+    const router = useRouter();
+    const route = useRoute();
+    const store = useApplicationStore();
+
+    const checkAuthentication = () => {
+      if (!store.isAuthenticated && route.path !== '/login') {
+        router.push('/login');
+      }
+    };
+
+    onMounted(checkAuthentication);
+    watch(() => store.isAuthenticated, checkAuthentication);
+    watch(() => route.path, checkAuthentication);
+
+    return {};
+  }
+};
+</script>
+
+<style>
+body {
+  font-family: 'Arial', sans-serif;
 }
 </style>

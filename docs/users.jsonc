@@ -1,0 +1,106 @@
+[
+    {
+        "id": 1,
+        "uniqueId": "e60b75db-a378-46eb-b90c-e0a5fc633927",
+        "name": "Prathap",
+        "email": "prathap@freecharge.com",
+        "password": "1234",
+        "products": {
+            "midas": {
+                "loan-recovery": "RM"
+            },
+            "supernova": {
+                "credit-underwriter": "L1",
+                "field-investigation": "CPA"
+            }
+        }
+    },
+    {
+        "id": 2,
+        "uniqueId": "f0ed5ee6-7be5-455c-8441-36fcd2842e7e",
+        "name": "Aniket",
+        "email": "aniket@freecharge.com",
+        "password": "1234",
+        "products": {
+            "supernova": {
+                "credit-underwriter": "L1",
+                "field-investigation": "CM"
+            }
+        }
+    },
+    {
+        "id": 3,
+        "uniqueId": "bb462a2b-6b4d-42c6-8e25-01f20555cc69",
+        "name": "Rohit",
+        "email": "rohit@freecharge.com",
+        "password": "1234",
+        "products": {
+            "midas": {
+                "loan-recovery": "RM"
+            },
+            "supernova": {
+                "credit-underwriter": "L2",
+                "field-investigation": "CPA"
+            }
+        }
+    },
+    {
+        "id": 4,
+        "uniqueId": "19d39a6a-90c1-465a-be93-8fda54b5e19c",
+        "name": "Dauleshwar",
+        "email": "Dauleshwar@freecharge.com",
+        "password": "1234",
+        "products": {
+            "midas": {
+                "loan-recovery": "LA"
+            },
+            "supernova": {
+                "credit-underwriter": "L4",
+                "field-investigation": "CPA"
+            }
+        }
+    },
+    {
+        "id": 5,
+        "uniqueId": "37ac2c51-87c9-471f-a2d9-f5cf9f432f97",
+        "name": "Aalind",
+        "email": "Aalind@freecharge.com",
+        "password": "1234",
+        "products": {
+            "midas": {
+                "loan-recovery": "RA"
+            },
+            "supernova": {
+                "credit-underwriter": "L6",
+                "field-investigation": "CM"
+            }
+        }
+    },
+    {
+        // This agent doesn't have access to supernova product
+        "id": 6,
+        "uniqueId": "acc4e632-3012-4bcb-abb9-f9b554505891",
+        "name": "Spandana",
+        "email": "spandana@freecharge.com",
+        "password": "1234",
+        "products": {
+            "midas": {
+                "loan-recovery": "RM"
+            }
+        }
+    },
+    {
+        // This agent doesn't have access to midas product
+        "id": 7,
+        "uniqueId": "b2561885-2ad3-4570-b039-c7e503373e38",
+        "name": "Naveen",
+        "email": "naveen@freecharge.com",
+        "password": "1234",
+        "products": {
+            "supernova": {
+                "credit-underwriter": "L2",
+                "field-investigation": "CM"
+            }
+        }
+    },
+]

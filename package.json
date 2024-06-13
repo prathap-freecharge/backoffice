@@ -10,7 +10,10 @@
     "deploy": "sh deploy.sh"
   },
   "dependencies": {
-    "vue": "^3.4.21"
+    "bulma": "^1.0.1",
+    "pinia": "^2.1.7",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.3"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
