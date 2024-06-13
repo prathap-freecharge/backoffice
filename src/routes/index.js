@@ -9,7 +9,8 @@ import ApplicationView from '../components/New/ApplicationView.vue';
 const routes = [
     { path: '/', component: ApplicationList },
     { path: '/details/:id', component: ApplicationDetails },
-    { path: '/login', component: LoginPage },
+    // { path: '/login', component: LoginPage },
+    { path: '/login', component: Login },
     { path: '/home', component: Home },
     { path: '/application/:id', component: ApplicationView }
 ];
